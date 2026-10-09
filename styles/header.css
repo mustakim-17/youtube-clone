@@ -1,0 +1,173 @@
+.header{
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    height:55px;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    border-bottom-width:1px ;
+    border-bottom-color: rgb(223, 219, 219);
+    border-bottom-style: solid;
+    z-index: 100;
+}
+
+.left-section{
+    align-items: center;
+    display:flex;
+}
+
+.menu{
+    height:24px;
+    margin-left: 24px;
+    margin-right:24px;
+}
+
+.youtube-logo{
+    height:20px;
+}
+
+.middle-section{
+    display:flex;
+    flex:1;
+    margin-left: 70px;
+    margin-right:35px;
+    max-width: 500px;
+    align-items: center;
+}
+
+.search-bar{
+    flex:1;
+    height:36px;
+    width:0;
+    padding-left:10px;
+    font-size:16px;
+    border:1px solid rgb(202, 202, 202);
+    border-radius:2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+}
+
+.search-bar::placeholder{
+    font-size:16px;
+    color:rgb(172, 172, 172)
+}
+
+.S-button,
+.VS-button,
+.upload-box,
+.apps-box,
+.notifications-box{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.S-button{
+    height:40px;
+    width:66px;
+    background-color: rgb(240, 240, 240);
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(202, 202, 202);
+    border-radius:2px;
+    margin-left: -2px;
+    margin-right: 10px;
+}
+
+.S-img{
+    height:25px;
+}
+
+.S-button .tooltip,
+.VS-button .tooltip,
+.upload-box .tooltip,
+.apps-box .tooltip,
+.notifications-box .tooltip{
+    background-color: gray;
+    color:white;
+    padding-top:6px;
+    padding-bottom:6px;
+    position:absolute;
+    bottom:-40px;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius: 2px;
+    font-family: Roboto, Arial;
+    font-size:12px;
+    font-weight: 500;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.S-button:hover .tooltip,
+.VS-button:hover .tooltip,
+.upload-box:hover .tooltip,
+.apps-box:hover .tooltip,
+.notifications-box:hover .tooltip{
+    opacity:1;
+}
+
+.VS-button{
+    height:40px;
+    width:40px;
+    background-color: rgb(240, 240, 240);
+    border:none;
+    border-radius:20px;
+}
+
+.VS-img{
+    height:25px;
+}
+
+.right-section{
+    display:flex;
+    width:180px;
+    margin-right:20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.upload{
+    height: 24px;
+}
+
+.apps{
+    height: 24px;
+}
+
+.notifications-box{
+    position: relative;
+}
+
+.notifications{
+    height: 24px;
+}
+
+.notifications-count{
+    position: absolute;
+    top:-3px;
+    right: -7.5px;
+    background-color: rgb(197, 13, 13);
+    color:white;
+    font-family: roboto, Arial;
+    font-size: 12px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right:5px;
+    padding-left:5px;
+    border-radius: 50%;
+    border-color: white;
+    border-style:solid;
+    border-width:2px;
+}
+
+.acc{
+    height: 32px;
+    border-radius: 16px;
+}
